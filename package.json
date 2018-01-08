@@ -1,46 +1,45 @@
 {
   "name": "rig.js",
-  "version": "0.0.0",
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "start": "webpack-dev-server --inline --progress --port 3000",
+    "build": "rimraf docs && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveg3003/rig.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steveg3003/rig.js/issues"
+  },
+  "homepage": "https://github.com/steveg3003/rig.js#readme",
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/forms": "^4.0.0",
-    "@angular/http": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
-    "@angular/router": "^4.0.0",
-    "core-js": "^2.4.1",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    
   },
   "devDependencies": {
-    "@angular/cli": "1.0.0",
-    "@angular/compiler-cli": "^4.0.0",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "~6.0.60",
-    "codelyzer": "~2.0.0",
-    "jasmine-core": "~2.5.2",
-    "jasmine-spec-reporter": "~3.2.0",
-    "karma": "~1.4.1",
-    "karma-chrome-launcher": "~2.0.0",
-    "karma-cli": "~1.0.1",
-    "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
-    "protractor": "~5.1.0",
-    "ts-node": "~2.0.0",
-    "tslint": "~4.5.0",
-    "typescript": "~2.2.0"
+    "fs": "0.0.1-security",
+    "gsap": "^1.20.3",
+    "html-loader": "^0.5.4",
+    "html-webpack-plugin": "^2.30.1",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.19.1",
+    "webpack-dev-server": "^2.10.0",
+    "webpack-merge": "^4.1.1",
+    "awesome-typescript-loader": "^3.4.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "@types/gsap": "^1.19.1",
+    "@types/pixi.js": "^4.6.3",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "typescript": "^2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
   }
 }
